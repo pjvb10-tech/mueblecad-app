@@ -1,0 +1,51 @@
+# Compila MuebleCAD para Mac (chip Apple) y Windows en los servidores de GitHub.
+# Uso: en GitHub, pestaña Actions > "Compilar apps" > Run workflow. Los instaladores quedan como "artifacts".
+name: Compilar apps
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest      # Apple Silicon (arm64)
+            script: dist:mac
+            artifact: MuebleCAD-mac-arm64
+            path: |
+              release/*.dmg
+              release/*.zip
+          - os: windows-latest
+            script: dist
+            artifact: MuebleCAD-windows
+            path: |
+              release/MuebleCAD.exe
+              release/MuebleCAD-Setup.exe
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run ${{ matrix.script }}
+      - name: Verificar que la app de Mac arranca (chip Apple)
+        if: runner.os == 'macOS'
+        run: |
+          APP="release/mac-arm64/MuebleCAD.app"
+          echo "--- arquitectura"; lipo -info "$APP/Contents/MacOS/MuebleCAD"
+          echo "--- firma"; codesign --verify --deep --strict "$APP" && echo "firma valida"; codesign -dv "$APP" 2>&1 | grep -E "Signature|Identifier" || true
+          echo "--- arranque"; rm -rf "$HOME/Documents/MuebleCAD"
+          open -n "$APP"; sleep 12
+          pgrep -fl "MuebleCAD" | head -3 || { echo "la app no esta corriendo"; exit 1; }
+          ls "$HOME/Documents/MuebleCAD" && echo "la app creo su carpeta de datos"
+          pkill -f MuebleCAD || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: ${{ matrix.path }}

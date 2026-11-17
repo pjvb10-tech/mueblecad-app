@@ -1,0 +1,21 @@
+node_modules
+dist
+release*
+
+# Datos personales del usuario (diseños, capturas, exportaciones, respaldos)
+data/
+respaldos/
+*.log
+
+# Entorno y herramientas locales
+.env
+.env.*
+.claude/
+graphify-out/
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+
+# Herramientas externas que no se redistribuyen (dwg2dxf de LibreDWG)
+herramientas/
+dist-mcp

@@ -1,0 +1,6096 @@
+{
+  "name": "porton",
+  "kerf": 3,
+  "edgePrice": 0,
+  "hardware": [
+    {
+      "id": "bisagra",
+      "name": "Bisagra",
+      "price": 0,
+      "qty": 0,
+      "rule": "hinge"
+    },
+    {
+      "id": "manija",
+      "name": "Manija / tirador",
+      "price": 0,
+      "qty": 0,
+      "rule": "handle"
+    },
+    {
+      "id": "soporte",
+      "name": "Soporte de repisa",
+      "price": 0,
+      "qty": 0,
+      "rule": "shelfpin"
+    },
+    {
+      "id": "corredera",
+      "name": "Corredera (par)",
+      "price": 0,
+      "qty": 0,
+      "rule": "slide"
+    },
+    {
+      "id": "tornillos",
+      "name": "Tornillos y tarugos (caja)",
+      "price": 0,
+      "qty": 0
+    }
+  ],
+  "materials": [
+    {
+      "id": "mel18",
+      "name": "Melamina 18 mm",
+      "thickness": 18,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#d8b98a",
+      "grain": true,
+      "price": 0
+    },
+    {
+      "id": "frente",
+      "name": "Melamina blanca 18 mm (puertas)",
+      "thickness": 18,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#f1f1ee",
+      "grain": true,
+      "price": 0
+    },
+    {
+      "id": "mdf3",
+      "name": "MDF 3 mm (fondos)",
+      "thickness": 3,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#a98b64",
+      "grain": false,
+      "price": 0
+    },
+    {
+      "id": "fierro50",
+      "name": "fierro 50x50 e3",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#4a4f57",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "extras",
+      "name": "fierro 50x20 e2",
+      "thickness": 20,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#6b7079",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "tabla1x4",
+      "name": "tabla 1x4",
+      "thickness": 19,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#c8a46a",
+      "grain": true,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "pletina25x3",
+      "name": "pletina 25x3",
+      "thickness": 3,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#9aa0a6",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "tubo100x50",
+      "name": "tubo 100x50 e3",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#555b63",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_hormigon",
+      "name": "Portón - hormigón",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#8e9094",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_riel",
+      "name": "Portón - riel en V",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#2f6fd6",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_carro",
+      "name": "Portón - carro y rueda",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#f08a1c",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_guia",
+      "name": "Portón - guía superior",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#2fa84f",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_motor",
+      "name": "Portón - motor",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#d63a2f",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_crem",
+      "name": "Portón - cremallera",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#e8c92a",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_base",
+      "name": "Portón - base de refuerzo (hormigón existente)",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#c9c4b6",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_pilar",
+      "name": "Portón - pilar de pandereta existente",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#d8d2c0",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_recibo",
+      "name": "Portón - poste de recibo y cerrojo",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#1fa5a5",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_zapata",
+      "name": "Portón - zapata de hormigón",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#7a7d82",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "tornillo",
+      "name": "Portón - tornillos 4x16 (cabeza Ø8)",
+      "thickness": 3,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#8d9399",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "tubo40",
+      "name": "fierro 40x40 e2 (puerta)",
+      "thickness": 40,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#4f6b8a",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "p_herraje",
+      "name": "Portón - puerta herrajes (bisagras, cerradura, manillas)",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#c9a227",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "p_cierre",
+      "name": "Portón - puerta cierrapuertas hidráulico",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#7a4a2a",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "p_contacto",
+      "name": "Portón - contacto magnético",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#e6e6e6",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_rueda",
+      "name": "Portón - rueda con ranura en V",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#2c2c2e",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_eje",
+      "name": "Portón - ejes y pasadores",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#b0b5bb",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_pinon",
+      "name": "Portón - piñón",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#e3e6ea",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_columna",
+      "name": "Portón - columna del motor (tubo 250x250 e6)",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#5b6f86",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_plataforma",
+      "name": "Portón - plataforma del motor (plancha 12 mm)",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#8a8f96",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_tapa",
+      "name": "Portón - tapa del motor",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#f2f2f2",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_cable",
+      "name": "Portón - cable de liberación manual",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#1b1b1b",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_tablero",
+      "name": "Portón - tablero de control",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#cfd8dc",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    },
+    {
+      "id": "sc_baliza",
+      "name": "Portón - baliza",
+      "thickness": 50,
+      "sheetW": 2400,
+      "sheetH": 1200,
+      "color": "#ffb000",
+      "grain": false,
+      "price": 0,
+      "purchased": true
+    }
+  ],
+  "parts": [
+    {
+      "id": "p1409",
+      "name": "Portón - marco vertical izq",
+      "size": [
+        50,
+        2000,
+        50
+      ],
+      "position": [
+        -480,
+        30,
+        1433
+      ],
+      "material": "fierro50",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 5
+    },
+    {
+      "id": "p1410",
+      "name": "Portón - marco vertical der",
+      "size": [
+        50,
+        2000,
+        50
+      ],
+      "position": [
+        4270,
+        30,
+        1433
+      ],
+      "material": "fierro50",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 5
+    },
+    {
+      "id": "p1411",
+      "name": "Portón - marco horizontal inf (4700)",
+      "size": [
+        4700,
+        50,
+        50
+      ],
+      "position": [
+        -430,
+        30,
+        1433
+      ],
+      "material": "fierro50",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 3,
+      "cornerRadius": 5
+    },
+    {
+      "id": "p1412",
+      "name": "Portón - marco horizontal sup (4700)",
+      "size": [
+        4700,
+        50,
+        50
+      ],
+      "position": [
+        -430,
+        1980,
+        1433
+      ],
+      "material": "fierro50",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 3,
+      "cornerRadius": 5
+    },
+    {
+      "id": "p1413",
+      "name": "Portón - pilar de refuerzo 1 (100x50 e3)",
+      "size": [
+        100,
+        1900,
+        50
+      ],
+      "position": [
+        893.3330000000001,
+        80,
+        1433
+      ],
+      "material": "tubo100x50",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 4
+    },
+    {
+      "id": "p1414",
+      "name": "Portón - pilar de refuerzo 2 (100x50 e3)",
+      "size": [
+        100,
+        1900,
+        50
+      ],
+      "position": [
+        2370,
+        80,
+        1433
+      ],
+      "material": "tubo100x50",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 4
+    },
+    {
+      "id": "p1415",
+      "name": "Portón - pilar de refuerzo 3 (100x50 e3)",
+      "size": [
+        100,
+        1900,
+        50
+      ],
+      "position": [
+        3470,
+        80,
+        1433
+      ],
+      "material": "tubo100x50",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 4
+    },
+    {
+      "id": "p1416",
+      "name": "Portón - tabla 01 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        -426.66700000000003,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1417",
+      "name": "Portón - perfil 50x20 01 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        -333.33299999999997,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1418",
+      "name": "Portón - perfil 50x20 01 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        -333.33299999999997,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1419",
+      "name": "Portón - perfil 50x20 01 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        -333.33299999999997,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1420",
+      "name": "Portón - tabla 02 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        -280,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1421",
+      "name": "Portón - perfil 50x20 02 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        -186.66699999999997,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1422",
+      "name": "Portón - perfil 50x20 02 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        -186.66699999999997,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1423",
+      "name": "Portón - perfil 50x20 02 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        -186.66699999999997,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1424",
+      "name": "Portón - tabla 03 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        -133.33300000000003,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1425",
+      "name": "Portón - perfil 50x20 03 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        -40,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1426",
+      "name": "Portón - perfil 50x20 03 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        -40,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1427",
+      "name": "Portón - perfil 50x20 03 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        -40,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1428",
+      "name": "Portón - tabla 04 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        13.333000000000027,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1429",
+      "name": "Portón - perfil 50x20 04 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        106.66700000000003,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1430",
+      "name": "Portón - perfil 50x20 04 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        106.66700000000003,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1431",
+      "name": "Portón - perfil 50x20 04 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        106.66700000000003,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1432",
+      "name": "Portón - tabla 05 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        160,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1433",
+      "name": "Portón - perfil 50x20 05 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        253.33299999999997,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1434",
+      "name": "Portón - perfil 50x20 05 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        253.33299999999997,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1435",
+      "name": "Portón - perfil 50x20 05 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        253.33299999999997,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1436",
+      "name": "Portón - tabla 06 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        306.66700000000003,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1437",
+      "name": "Portón - perfil 50x20 06 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        400,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1438",
+      "name": "Portón - perfil 50x20 06 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        400,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1439",
+      "name": "Portón - perfil 50x20 06 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        400,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1440",
+      "name": "Portón - tabla 07 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        453.33299999999997,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1441",
+      "name": "Portón - perfil 50x20 07 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        546.6669999999999,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1442",
+      "name": "Portón - perfil 50x20 07 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        546.6669999999999,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1443",
+      "name": "Portón - perfil 50x20 07 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        546.6669999999999,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1444",
+      "name": "Portón - tabla 08 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        600,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1445",
+      "name": "Portón - perfil 50x20 08 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        693.3330000000001,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1446",
+      "name": "Portón - perfil 50x20 08 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        693.3330000000001,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1447",
+      "name": "Portón - perfil 50x20 08 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        693.3330000000001,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1448",
+      "name": "Portón - tabla 09 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        746.6669999999999,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1449",
+      "name": "Portón - perfil 50x20 09 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        840,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1450",
+      "name": "Portón - perfil 50x20 09 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        840,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1451",
+      "name": "Portón - perfil 50x20 09 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        840,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1452",
+      "name": "Portón - perfil 50x20 10 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        996.6669999999999,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1453",
+      "name": "Portón - perfil 50x20 10 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        996.6669999999999,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1454",
+      "name": "Portón - perfil 50x20 10 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        996.6669999999999,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1455",
+      "name": "Portón - tabla 10 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        1050,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1456",
+      "name": "Portón - perfil 50x20 11 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        1143.333,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1457",
+      "name": "Portón - perfil 50x20 11 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        1143.333,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1458",
+      "name": "Portón - perfil 50x20 11 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        1143.333,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1459",
+      "name": "Portón - tabla 11 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        1196.667,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1460",
+      "name": "Portón - perfil 50x20 12 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        1290,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1461",
+      "name": "Portón - perfil 50x20 12 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        1290,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1462",
+      "name": "Portón - perfil 50x20 12 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        1290,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1463",
+      "name": "Portón - tabla 12 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        1343.333,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1464",
+      "name": "Portón - perfil 50x20 13 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        1436.667,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1465",
+      "name": "Portón - perfil 50x20 13 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        1436.667,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1466",
+      "name": "Portón - perfil 50x20 13 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        1436.667,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1467",
+      "name": "Portón - tabla 13 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        1490,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1468",
+      "name": "Portón - perfil 50x20 14 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        1583.333,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1469",
+      "name": "Portón - perfil 50x20 14 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        1583.333,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1470",
+      "name": "Portón - perfil 50x20 14 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        1583.333,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1471",
+      "name": "Portón - tabla 14 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        1636.667,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1472",
+      "name": "Portón - perfil 50x20 15 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        1730,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1473",
+      "name": "Portón - perfil 50x20 15 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        1730,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1474",
+      "name": "Portón - perfil 50x20 15 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        1730,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1475",
+      "name": "Portón - tabla 15 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        1783.333,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1476",
+      "name": "Portón - perfil 50x20 16 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        1876.667,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1477",
+      "name": "Portón - perfil 50x20 16 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        1876.667,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1478",
+      "name": "Portón - perfil 50x20 16 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        1876.667,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1479",
+      "name": "Portón - tabla 16 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        1930,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1480",
+      "name": "Portón - perfil 50x20 17 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        2023.333,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1481",
+      "name": "Portón - perfil 50x20 17 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        2023.333,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1482",
+      "name": "Portón - perfil 50x20 17 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        2023.333,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1483",
+      "name": "Portón - tabla 17 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        2076.667,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1484",
+      "name": "Portón - perfil 50x20 18 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        2170,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1485",
+      "name": "Portón - perfil 50x20 18 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        2170,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1486",
+      "name": "Portón - perfil 50x20 18 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        2170,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1487",
+      "name": "Portón - tabla 18 (izq)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        2223.333,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1488",
+      "name": "Portón - perfil 50x20 19 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        2316.667,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1489",
+      "name": "Portón - perfil 50x20 19 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        2316.667,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1490",
+      "name": "Portón - perfil 50x20 19 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        2316.667,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1491",
+      "name": "Portón - tabla 19 (der)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        3575,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1492",
+      "name": "Portón - perfil 50x20 20 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        3670,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1493",
+      "name": "Portón - perfil 50x20 20 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        3670,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1494",
+      "name": "Portón - perfil 50x20 20 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        3670,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1495",
+      "name": "Portón - tabla 20 (der)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        3725,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1496",
+      "name": "Portón - perfil 50x20 21 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        3820,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1497",
+      "name": "Portón - perfil 50x20 21 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        3820,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1498",
+      "name": "Portón - perfil 50x20 21 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        3820,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1499",
+      "name": "Portón - tabla 21 (der)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        3875,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1500",
+      "name": "Portón - perfil 50x20 22 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        3970,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1501",
+      "name": "Portón - perfil 50x20 22 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        3970,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1502",
+      "name": "Portón - perfil 50x20 22 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        3970,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1503",
+      "name": "Portón - tabla 22 (der)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        4025,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1504",
+      "name": "Portón - perfil 50x20 23 inferior",
+      "size": [
+        50,
+        550,
+        20
+      ],
+      "position": [
+        4120,
+        80,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1505",
+      "name": "Portón - perfil 50x20 23 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        4120,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1506",
+      "name": "Portón - perfil 50x20 23 superior",
+      "size": [
+        50,
+        150,
+        20
+      ],
+      "position": [
+        4120,
+        1830,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1507",
+      "name": "Portón - tabla 23 (der)",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        4175,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1508",
+      "name": "Portón - travesaño inferior (izq A)",
+      "size": [
+        1323.333,
+        50,
+        20
+      ],
+      "position": [
+        -430,
+        630,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1509",
+      "name": "Portón - travesaño superior (izq A)",
+      "size": [
+        1323.333,
+        50,
+        20
+      ],
+      "position": [
+        -430,
+        1780,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1510",
+      "name": "Portón - travesaño inferior (izq B)",
+      "size": [
+        1376.667,
+        50,
+        20
+      ],
+      "position": [
+        993.3330000000001,
+        630,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1511",
+      "name": "Portón - travesaño superior (izq B)",
+      "size": [
+        1376.667,
+        50,
+        20
+      ],
+      "position": [
+        993.3330000000001,
+        1780,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1512",
+      "name": "Portón - travesaño inferior (der)",
+      "size": [
+        700,
+        50,
+        20
+      ],
+      "position": [
+        3570,
+        630,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1513",
+      "name": "Portón - travesaño superior (der)",
+      "size": [
+        700,
+        50,
+        20
+      ],
+      "position": [
+        3570,
+        1780,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1514",
+      "name": "Portón - pletina interior inferior 1 (1323.333)",
+      "size": [
+        1323.333,
+        25,
+        3
+      ],
+      "position": [
+        -430,
+        817.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1515",
+      "name": "Portón - tornillo pletina inferior tabla 01",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        -385.66700000000003,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1516",
+      "name": "Portón - tornillo pletina inferior tabla 02",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        -239,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1517",
+      "name": "Portón - tornillo pletina inferior tabla 03",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        -92.33300000000003,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1518",
+      "name": "Portón - tornillo pletina inferior tabla 04",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        54.333000000000084,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1519",
+      "name": "Portón - tornillo pletina inferior tabla 05",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        201,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1520",
+      "name": "Portón - tornillo pletina inferior tabla 06",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        347.66700000000003,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1521",
+      "name": "Portón - tornillo pletina inferior tabla 07",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        494.33299999999997,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1522",
+      "name": "Portón - tornillo pletina inferior tabla 08",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        641,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1523",
+      "name": "Portón - tornillo pletina inferior tabla 09",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        787.6669999999999,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1524",
+      "name": "Portón - pletina interior inferior 2 (1376.667)",
+      "size": [
+        1376.667,
+        25,
+        3
+      ],
+      "position": [
+        993.3330000000001,
+        817.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1525",
+      "name": "Portón - tornillo pletina inferior tabla 10",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1091,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1526",
+      "name": "Portón - tornillo pletina inferior tabla 11",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1237.667,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1527",
+      "name": "Portón - tornillo pletina inferior tabla 12",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1384.333,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1528",
+      "name": "Portón - tornillo pletina inferior tabla 13",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1531,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1529",
+      "name": "Portón - tornillo pletina inferior tabla 14",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1677.667,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1530",
+      "name": "Portón - tornillo pletina inferior tabla 15",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1824.333,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1531",
+      "name": "Portón - tornillo pletina inferior tabla 16",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1971,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1532",
+      "name": "Portón - tornillo pletina inferior tabla 17",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2117.667,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1533",
+      "name": "Portón - tornillo pletina inferior tabla 18",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2264.333,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1534",
+      "name": "Portón - pletina interior inferior 3 (700)",
+      "size": [
+        700,
+        25,
+        3
+      ],
+      "position": [
+        3570,
+        817.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1535",
+      "name": "Portón - tornillo pletina inferior tabla 19",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3616,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1536",
+      "name": "Portón - tornillo pletina inferior tabla 20",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3766,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1537",
+      "name": "Portón - tornillo pletina inferior tabla 21",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3916,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1538",
+      "name": "Portón - tornillo pletina inferior tabla 22",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        4066,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1539",
+      "name": "Portón - tornillo pletina inferior tabla 23",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        4216,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1540",
+      "name": "Portón - pletina interior superior 1 (1323.333)",
+      "size": [
+        1323.333,
+        25,
+        3
+      ],
+      "position": [
+        -430,
+        1617.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1541",
+      "name": "Portón - tornillo pletina superior tabla 01",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        -385.66700000000003,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1542",
+      "name": "Portón - tornillo pletina superior tabla 02",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        -239,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1543",
+      "name": "Portón - tornillo pletina superior tabla 03",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        -92.33300000000003,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1544",
+      "name": "Portón - tornillo pletina superior tabla 04",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        54.333000000000084,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1545",
+      "name": "Portón - tornillo pletina superior tabla 05",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        201,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1546",
+      "name": "Portón - tornillo pletina superior tabla 06",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        347.66700000000003,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1547",
+      "name": "Portón - tornillo pletina superior tabla 07",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        494.33299999999997,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1548",
+      "name": "Portón - tornillo pletina superior tabla 08",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        641,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1549",
+      "name": "Portón - tornillo pletina superior tabla 09",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        787.6669999999999,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1550",
+      "name": "Portón - pletina interior superior 2 (1376.667)",
+      "size": [
+        1376.667,
+        25,
+        3
+      ],
+      "position": [
+        993.3330000000001,
+        1617.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1551",
+      "name": "Portón - tornillo pletina superior tabla 10",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1091,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1552",
+      "name": "Portón - tornillo pletina superior tabla 11",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1237.667,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1553",
+      "name": "Portón - tornillo pletina superior tabla 12",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1384.333,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1554",
+      "name": "Portón - tornillo pletina superior tabla 13",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1531,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1555",
+      "name": "Portón - tornillo pletina superior tabla 14",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1677.667,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1556",
+      "name": "Portón - tornillo pletina superior tabla 15",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1824.333,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1557",
+      "name": "Portón - tornillo pletina superior tabla 16",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        1971,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1558",
+      "name": "Portón - tornillo pletina superior tabla 17",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2117.667,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1559",
+      "name": "Portón - tornillo pletina superior tabla 18",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2264.333,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1560",
+      "name": "Portón - pletina interior superior 3 (700)",
+      "size": [
+        700,
+        25,
+        3
+      ],
+      "position": [
+        3570,
+        1617.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1561",
+      "name": "Portón - tornillo pletina superior tabla 19",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3616,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1562",
+      "name": "Portón - tornillo pletina superior tabla 20",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3766,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1563",
+      "name": "Portón - tornillo pletina superior tabla 21",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3916,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1564",
+      "name": "Portón - tornillo pletina superior tabla 22",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        4066,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1565",
+      "name": "Portón - tornillo pletina superior tabla 23",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        4216,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1566",
+      "name": "Portón - dintel fijo 50x20 sobre la puerta",
+      "size": [
+        1000,
+        50,
+        20
+      ],
+      "position": [
+        2470,
+        1895,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1567",
+      "name": "Portón - puerta larguero izq (40x40 e2)",
+      "size": [
+        40,
+        1800,
+        40
+      ],
+      "position": [
+        2490,
+        90,
+        1433
+      ],
+      "material": "tubo40",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 3
+    },
+    {
+      "id": "p1568",
+      "name": "Portón - puerta larguero der (40x40 e2)",
+      "size": [
+        40,
+        1800,
+        40
+      ],
+      "position": [
+        3410,
+        90,
+        1433
+      ],
+      "material": "tubo40",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 3
+    },
+    {
+      "id": "p1569",
+      "name": "Portón - puerta travesaño inferior (40x40 e2)",
+      "size": [
+        880,
+        40,
+        40
+      ],
+      "position": [
+        2530,
+        90,
+        1433
+      ],
+      "material": "tubo40",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 3
+    },
+    {
+      "id": "p1570",
+      "name": "Portón - puerta travesaño superior (40x40 e2)",
+      "size": [
+        880,
+        40,
+        40
+      ],
+      "position": [
+        2530,
+        1850,
+        1433
+      ],
+      "material": "tubo40",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 3
+    },
+    {
+      "id": "p1571",
+      "name": "Portón - puerta tabla 1",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        2537.5,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1572",
+      "name": "Portón - puerta tabla 2",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        2692.5,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1573",
+      "name": "Portón - puerta tabla 3",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        2847.5,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1574",
+      "name": "Portón - puerta tabla 4",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        3002.5,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1575",
+      "name": "Portón - puerta tabla 5",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        3157.5,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1576",
+      "name": "Portón - puerta tabla 6",
+      "size": [
+        90,
+        1100,
+        19
+      ],
+      "position": [
+        3312.5,
+        680,
+        1433
+      ],
+      "material": "tabla1x4",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1577",
+      "name": "Portón - puerta perfil 50x20 1 inferior",
+      "size": [
+        50,
+        500,
+        20
+      ],
+      "position": [
+        2635,
+        130,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1578",
+      "name": "Portón - puerta perfil 50x20 1 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        2635,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1579",
+      "name": "Portón - puerta perfil 50x20 2 inferior",
+      "size": [
+        50,
+        500,
+        20
+      ],
+      "position": [
+        2790,
+        130,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1580",
+      "name": "Portón - puerta perfil 50x20 2 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        2790,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1581",
+      "name": "Portón - puerta perfil 50x20 3 inferior",
+      "size": [
+        50,
+        500,
+        20
+      ],
+      "position": [
+        2945,
+        130,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1582",
+      "name": "Portón - puerta perfil 50x20 3 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        2945,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1583",
+      "name": "Portón - puerta perfil 50x20 4 inferior",
+      "size": [
+        50,
+        500,
+        20
+      ],
+      "position": [
+        3100,
+        130,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1584",
+      "name": "Portón - puerta perfil 50x20 4 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        3100,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1585",
+      "name": "Portón - puerta perfil 50x20 5 inferior",
+      "size": [
+        50,
+        500,
+        20
+      ],
+      "position": [
+        3255,
+        130,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1586",
+      "name": "Portón - puerta perfil 50x20 5 medio",
+      "size": [
+        50,
+        1100,
+        20
+      ],
+      "position": [
+        3255,
+        680,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "y",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1587",
+      "name": "Portón - puerta travesaño 50x20 inferior",
+      "size": [
+        880,
+        50,
+        20
+      ],
+      "position": [
+        2530,
+        630,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1588",
+      "name": "Portón - puerta travesaño 50x20 superior",
+      "size": [
+        880,
+        50,
+        20
+      ],
+      "position": [
+        2530,
+        1780,
+        1433
+      ],
+      "material": "extras",
+      "group": "Portón corredero",
+      "form": "tube",
+      "axis": "x",
+      "wall": 2,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1589",
+      "name": "Portón - puerta pletina interior inferior (880)",
+      "size": [
+        880,
+        25,
+        3
+      ],
+      "position": [
+        2530,
+        817.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1590",
+      "name": "Portón - puerta tornillo pletina inferior tabla 1",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2578.5,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1591",
+      "name": "Portón - puerta tornillo pletina inferior tabla 2",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2733.5,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1592",
+      "name": "Portón - puerta tornillo pletina inferior tabla 3",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2888.5,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1593",
+      "name": "Portón - puerta tornillo pletina inferior tabla 4",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3043.5,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1594",
+      "name": "Portón - puerta tornillo pletina inferior tabla 5",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3198.5,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1595",
+      "name": "Portón - puerta tornillo pletina inferior tabla 6",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3353.5,
+        826,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1596",
+      "name": "Portón - puerta pletina interior superior (880)",
+      "size": [
+        880,
+        25,
+        3
+      ],
+      "position": [
+        2530,
+        1617.5,
+        1453
+      ],
+      "material": "pletina25x3",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1597",
+      "name": "Portón - puerta tornillo pletina superior tabla 1",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2578.5,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1598",
+      "name": "Portón - puerta tornillo pletina superior tabla 2",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2733.5,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1599",
+      "name": "Portón - puerta tornillo pletina superior tabla 3",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        2888.5,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1600",
+      "name": "Portón - puerta tornillo pletina superior tabla 4",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3043.5,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1601",
+      "name": "Portón - puerta tornillo pletina superior tabla 5",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3198.5,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1602",
+      "name": "Portón - puerta tornillo pletina superior tabla 6",
+      "size": [
+        8,
+        8,
+        2.5
+      ],
+      "position": [
+        3353.5,
+        1626,
+        1456
+      ],
+      "material": "tornillo",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1603",
+      "name": "Portón - puerta bisagra 1 (Ø16x100)",
+      "size": [
+        16,
+        100,
+        16
+      ],
+      "position": [
+        2472,
+        230,
+        1465
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1604",
+      "name": "Portón - puerta bisagra 2 (Ø16x100)",
+      "size": [
+        16,
+        100,
+        16
+      ],
+      "position": [
+        2472,
+        880,
+        1465
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1605",
+      "name": "Portón - puerta bisagra 3 (Ø16x100)",
+      "size": [
+        16,
+        100,
+        16
+      ],
+      "position": [
+        2472,
+        1630,
+        1465
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1606",
+      "name": "Portón - puerta cerradura de embutir (en el larguero der)",
+      "size": [
+        30,
+        150,
+        30
+      ],
+      "position": [
+        3415,
+        955,
+        1438
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1607",
+      "name": "Portón - puerta bombín (Ø22)",
+      "size": [
+        22,
+        22,
+        50
+      ],
+      "position": [
+        3419,
+        979,
+        1428
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1608",
+      "name": "Portón - puerta manilla exterior (eje)",
+      "size": [
+        14,
+        14,
+        22
+      ],
+      "position": [
+        3423,
+        1023,
+        1411
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1609",
+      "name": "Portón - puerta manilla exterior (calle)",
+      "size": [
+        110,
+        18,
+        18
+      ],
+      "position": [
+        3327,
+        1021,
+        1393
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1610",
+      "name": "Portón - puerta manilla interior (eje)",
+      "size": [
+        14,
+        14,
+        22
+      ],
+      "position": [
+        3423,
+        1023,
+        1473
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero",
+      "form": "cylinder",
+      "axis": "z"
+    },
+    {
+      "id": "p1611",
+      "name": "Portón - puerta manilla interior (adentro)",
+      "size": [
+        110,
+        18,
+        18
+      ],
+      "position": [
+        3327,
+        1021,
+        1495
+      ],
+      "material": "p_herraje",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1612",
+      "name": "Portón - puerta cierrapuertas hidráulico (cuerpo)",
+      "size": [
+        260,
+        50,
+        50
+      ],
+      "position": [
+        2560,
+        1590,
+        1473
+      ],
+      "material": "p_cierre",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1613",
+      "name": "Portón - puerta cierrapuertas brazo articulado",
+      "size": [
+        144.6291201783626,
+        10,
+        10
+      ],
+      "position": [
+        2422.685439910819,
+        1627.5,
+        1493
+      ],
+      "material": "p_cierre",
+      "group": "Portón corredero",
+      "rotZ": -15.068
+    },
+    {
+      "id": "p1614",
+      "name": "Portón - puerta cierrapuertas soporte en el pilar izq",
+      "size": [
+        40,
+        60,
+        40
+      ],
+      "position": [
+        2410,
+        1620,
+        1483
+      ],
+      "material": "p_cierre",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1615",
+      "name": "Portón - contacto magnético (pilar der, 20x20x60)",
+      "size": [
+        20,
+        60,
+        20
+      ],
+      "position": [
+        3480,
+        1530,
+        1483
+      ],
+      "material": "p_contacto",
+      "group": "Portón corredero"
+    },
+    {
+      "id": "p1616",
+      "name": "Portón - pandereta pilar (x=-6120)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        -6305,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1617",
+      "name": "Portón - pandereta pilar (x=-4080)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        -4265,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1618",
+      "name": "Portón - pandereta pilar (x=-2040)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        -2225,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1619",
+      "name": "Portón - pandereta pilar (x=0)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        -185,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1620",
+      "name": "Portón - pandereta pilar (x=4080)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        3895,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1621",
+      "name": "Portón - pandereta pilar (x=6120)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        5935,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1622",
+      "name": "Portón - pandereta pilar (x=8160)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        7975,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1623",
+      "name": "Portón - pandereta pilar (x=10200)",
+      "size": [
+        130,
+        2150,
+        130
+      ],
+      "position": [
+        10015,
+        -60,
+        850
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1624",
+      "name": "Portón - pandereta paño 1 (x=-6120..-4080)",
+      "size": [
+        1910,
+        2000,
+        100
+      ],
+      "position": [
+        -6175,
+        -60,
+        880
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1625",
+      "name": "Portón - pandereta paño 2 (x=-4080..-2040)",
+      "size": [
+        1910,
+        2000,
+        100
+      ],
+      "position": [
+        -4135,
+        -60,
+        880
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1626",
+      "name": "Portón - pandereta paño 3 (x=-2040..0)",
+      "size": [
+        1910,
+        2000,
+        100
+      ],
+      "position": [
+        -2095,
+        -60,
+        880
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1627",
+      "name": "Portón - pandereta paño 4 (x=4080..6120)",
+      "size": [
+        1910,
+        2000,
+        100
+      ],
+      "position": [
+        4025,
+        -60,
+        880
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1628",
+      "name": "Portón - pandereta paño 5 (x=6120..8160)",
+      "size": [
+        1910,
+        2000,
+        100
+      ],
+      "position": [
+        6065,
+        -60,
+        880
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1629",
+      "name": "Portón - pandereta paño 6 (x=8160..10200)",
+      "size": [
+        1910,
+        2000,
+        100
+      ],
+      "position": [
+        8105,
+        -60,
+        880
+      ],
+      "material": "sc_pilar",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1630",
+      "name": "Portón - base de hormigón (x=-4080)",
+      "size": [
+        400,
+        1800,
+        400
+      ],
+      "position": [
+        -4400,
+        -60,
+        980
+      ],
+      "material": "sc_base",
+      "group": "Portón - sistema de corredera",
+      "form": "prism",
+      "axis": "x",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          400
+        ],
+        [
+          1800,
+          270
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "p1631",
+      "name": "Portón - base de hormigón (x=0)",
+      "size": [
+        400,
+        1800,
+        400
+      ],
+      "position": [
+        -320,
+        -60,
+        980
+      ],
+      "material": "sc_base",
+      "group": "Portón - sistema de corredera",
+      "form": "prism",
+      "axis": "x",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          400
+        ],
+        [
+          1800,
+          270
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "p1632",
+      "name": "Portón - base de hormigón (x=4080)",
+      "size": [
+        400,
+        1800,
+        400
+      ],
+      "position": [
+        3760,
+        -60,
+        980
+      ],
+      "material": "sc_base",
+      "group": "Portón - sistema de corredera",
+      "form": "prism",
+      "axis": "x",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          400
+        ],
+        [
+          1800,
+          270
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "p1633",
+      "name": "Portón - base de hormigón (x=8160)",
+      "size": [
+        400,
+        1800,
+        400
+      ],
+      "position": [
+        7840,
+        -60,
+        980
+      ],
+      "material": "sc_base",
+      "group": "Portón - sistema de corredera",
+      "form": "prism",
+      "axis": "x",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          400
+        ],
+        [
+          1800,
+          270
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "p1634",
+      "name": "Portón - viga de hormigón",
+      "size": [
+        9150,
+        250,
+        200
+      ],
+      "position": [
+        -5040,
+        -310,
+        1443
+      ],
+      "material": "sc_hormigon",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1635",
+      "name": "Portón - riel en V invertida",
+      "size": [
+        8850,
+        25,
+        30
+      ],
+      "position": [
+        -4790,
+        -60,
+        1568
+      ],
+      "material": "sc_riel",
+      "group": "Portón - sistema de corredera",
+      "form": "prism",
+      "axis": "x",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          30
+        ],
+        [
+          25,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "p1636",
+      "name": "Portón - carro 1 placa base 150x120x10",
+      "size": [
+        150,
+        10,
+        120
+      ],
+      "position": [
+        -155,
+        20,
+        1433
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1637",
+      "name": "Portón - carro 1 carrillo a (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        -145,
+        -23,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1638",
+      "name": "Portón - carro 1 carrillo b (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        -145,
+        -23,
+        1605
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1639",
+      "name": "Portón - carro 1 puente de carrillos",
+      "size": [
+        130,
+        8,
+        60
+      ],
+      "position": [
+        -145,
+        79,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1640",
+      "name": "Portón - rueda 1 (Ø120x40, ranura en V)",
+      "size": [
+        120,
+        120,
+        40
+      ],
+      "position": [
+        -140,
+        -43,
+        1563
+      ],
+      "material": "sc_rueda",
+      "group": "Portón - sistema de corredera",
+      "form": "revolve",
+      "axis": "z",
+      "profile": [
+        [
+          10,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          60,
+          14
+        ],
+        [
+          52,
+          20
+        ],
+        [
+          60,
+          26
+        ],
+        [
+          60,
+          40
+        ],
+        [
+          10,
+          40
+        ]
+      ],
+      "segments": 64
+    },
+    {
+      "id": "p1641",
+      "name": "Portón - carro 1 eje (Ø20)",
+      "size": [
+        20,
+        20,
+        60
+      ],
+      "position": [
+        -90,
+        7,
+        1553
+      ],
+      "material": "sc_eje",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "z",
+      "segments": 24
+    },
+    {
+      "id": "p1642",
+      "name": "Portón - carro 2 placa base 150x120x10",
+      "size": [
+        150,
+        10,
+        120
+      ],
+      "position": [
+        868,
+        20,
+        1433
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1643",
+      "name": "Portón - carro 2 carrillo a (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        878,
+        -23,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1644",
+      "name": "Portón - carro 2 carrillo b (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        878,
+        -23,
+        1605
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1645",
+      "name": "Portón - carro 2 puente de carrillos",
+      "size": [
+        130,
+        8,
+        60
+      ],
+      "position": [
+        878,
+        79,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1646",
+      "name": "Portón - rueda 2 (Ø120x40, ranura en V)",
+      "size": [
+        120,
+        120,
+        40
+      ],
+      "position": [
+        883,
+        -43,
+        1563
+      ],
+      "material": "sc_rueda",
+      "group": "Portón - sistema de corredera",
+      "form": "revolve",
+      "axis": "z",
+      "profile": [
+        [
+          10,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          60,
+          14
+        ],
+        [
+          52,
+          20
+        ],
+        [
+          60,
+          26
+        ],
+        [
+          60,
+          40
+        ],
+        [
+          10,
+          40
+        ]
+      ],
+      "segments": 64
+    },
+    {
+      "id": "p1647",
+      "name": "Portón - carro 2 eje (Ø20)",
+      "size": [
+        20,
+        20,
+        60
+      ],
+      "position": [
+        933,
+        7,
+        1553
+      ],
+      "material": "sc_eje",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "z",
+      "segments": 24
+    },
+    {
+      "id": "p1648",
+      "name": "Portón - carro 3 placa base 150x120x10",
+      "size": [
+        150,
+        10,
+        120
+      ],
+      "position": [
+        2300,
+        20,
+        1433
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1649",
+      "name": "Portón - carro 3 carrillo a (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        2310,
+        -23,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1650",
+      "name": "Portón - carro 3 carrillo b (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        2310,
+        -23,
+        1605
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1651",
+      "name": "Portón - carro 3 puente de carrillos",
+      "size": [
+        130,
+        8,
+        60
+      ],
+      "position": [
+        2310,
+        79,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1652",
+      "name": "Portón - rueda 3 (Ø120x40, ranura en V)",
+      "size": [
+        120,
+        120,
+        40
+      ],
+      "position": [
+        2315,
+        -43,
+        1563
+      ],
+      "material": "sc_rueda",
+      "group": "Portón - sistema de corredera",
+      "form": "revolve",
+      "axis": "z",
+      "profile": [
+        [
+          10,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          60,
+          14
+        ],
+        [
+          52,
+          20
+        ],
+        [
+          60,
+          26
+        ],
+        [
+          60,
+          40
+        ],
+        [
+          10,
+          40
+        ]
+      ],
+      "segments": 64
+    },
+    {
+      "id": "p1653",
+      "name": "Portón - carro 3 eje (Ø20)",
+      "size": [
+        20,
+        20,
+        60
+      ],
+      "position": [
+        2365,
+        7,
+        1553
+      ],
+      "material": "sc_eje",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "z",
+      "segments": 24
+    },
+    {
+      "id": "p1654",
+      "name": "Portón - carro 4 placa base 150x120x10",
+      "size": [
+        150,
+        10,
+        120
+      ],
+      "position": [
+        3490,
+        20,
+        1433
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1655",
+      "name": "Portón - carro 4 carrillo a (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        3500,
+        -23,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1656",
+      "name": "Portón - carro 4 carrillo b (8 mm)",
+      "size": [
+        130,
+        102,
+        8
+      ],
+      "position": [
+        3500,
+        -23,
+        1605
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1657",
+      "name": "Portón - carro 4 puente de carrillos",
+      "size": [
+        130,
+        8,
+        60
+      ],
+      "position": [
+        3500,
+        79,
+        1553
+      ],
+      "material": "sc_carro",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1658",
+      "name": "Portón - rueda 4 (Ø120x40, ranura en V)",
+      "size": [
+        120,
+        120,
+        40
+      ],
+      "position": [
+        3505,
+        -43,
+        1563
+      ],
+      "material": "sc_rueda",
+      "group": "Portón - sistema de corredera",
+      "form": "revolve",
+      "axis": "z",
+      "profile": [
+        [
+          10,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          60,
+          14
+        ],
+        [
+          52,
+          20
+        ],
+        [
+          60,
+          26
+        ],
+        [
+          60,
+          40
+        ],
+        [
+          10,
+          40
+        ]
+      ],
+      "segments": 64
+    },
+    {
+      "id": "p1659",
+      "name": "Portón - carro 4 eje (Ø20)",
+      "size": [
+        20,
+        20,
+        60
+      ],
+      "position": [
+        3555,
+        7,
+        1553
+      ],
+      "material": "sc_eje",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "z",
+      "segments": 24
+    },
+    {
+      "id": "p1660",
+      "name": "Portón - cremallera módulo 4 (12x12x4800)",
+      "size": [
+        4800,
+        12,
+        12
+      ],
+      "position": [
+        -480,
+        1999,
+        1483
+      ],
+      "material": "sc_crem",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1661",
+      "name": "Portón - zapata de la columna (600x600x700)",
+      "size": [
+        600,
+        700,
+        600
+      ],
+      "position": [
+        -640,
+        -760,
+        1683
+      ],
+      "material": "sc_zapata",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1662",
+      "name": "Portón - columna del motor (tubo 250x250 e6)",
+      "size": [
+        250,
+        2028,
+        250
+      ],
+      "position": [
+        -465,
+        -60,
+        1730
+      ],
+      "material": "sc_columna",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 6,
+      "cornerRadius": 6
+    },
+    {
+      "id": "p1663",
+      "name": "Portón - plataforma del motor (plancha 400x12x350)",
+      "size": [
+        400,
+        12,
+        350
+      ],
+      "position": [
+        -540,
+        1968,
+        1630
+      ],
+      "material": "sc_plataforma",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1664",
+      "name": "Portón - ménsula de ángulo 1 (columna-plataforma)",
+      "size": [
+        12,
+        170,
+        100
+      ],
+      "position": [
+        -440,
+        1798,
+        1630
+      ],
+      "material": "sc_columna",
+      "group": "Portón - sistema de corredera",
+      "form": "prism",
+      "axis": "x",
+      "profile": [
+        [
+          170,
+          0
+        ],
+        [
+          170,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    {
+      "id": "p1665",
+      "name": "Portón - ménsula de ángulo 2 (columna-plataforma)",
+      "size": [
+        12,
+        170,
+        100
+      ],
+      "position": [
+        -252,
+        1798,
+        1630
+      ],
+      "material": "sc_columna",
+      "group": "Portón - sistema de corredera",
+      "form": "prism",
+      "axis": "x",
+      "profile": [
+        [
+          170,
+          0
+        ],
+        [
+          170,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    {
+      "id": "p1666",
+      "name": "Portón - motor (300x250x350)",
+      "size": [
+        300,
+        250,
+        350
+      ],
+      "position": [
+        -490,
+        1980,
+        1630
+      ],
+      "material": "sc_motor",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1667",
+      "name": "Portón - tapa del motor",
+      "size": [
+        312,
+        30,
+        362
+      ],
+      "position": [
+        -496,
+        2230,
+        1624
+      ],
+      "material": "sc_tapa",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1668",
+      "name": "Portón - reductor del motor",
+      "size": [
+        70,
+        80,
+        50
+      ],
+      "position": [
+        -375,
+        2005,
+        1580
+      ],
+      "material": "sc_motor",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1669",
+      "name": "Portón - eje del piñón (Ø20)",
+      "size": [
+        20,
+        20,
+        93
+      ],
+      "position": [
+        -350,
+        2035,
+        1487
+      ],
+      "material": "sc_eje",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "z",
+      "segments": 24
+    },
+    {
+      "id": "p1670",
+      "name": "Portón - piñón (Ø64)",
+      "size": [
+        64,
+        64,
+        20
+      ],
+      "position": [
+        -372,
+        2013,
+        1487
+      ],
+      "material": "sc_pinon",
+      "group": "Portón - sistema de corredera",
+      "form": "revolve",
+      "axis": "z",
+      "profile": [
+        [
+          10,
+          0
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          32,
+          20
+        ],
+        [
+          10,
+          20
+        ]
+      ],
+      "segments": 32
+    },
+    {
+      "id": "p1671",
+      "name": "Portón - tablero de control (300x400x150)",
+      "size": [
+        300,
+        400,
+        150
+      ],
+      "position": [
+        -490,
+        1240,
+        1580
+      ],
+      "material": "sc_tablero",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1672",
+      "name": "Portón - cable de liberación manual (vertical Ø4)",
+      "size": [
+        4,
+        950,
+        4
+      ],
+      "position": [
+        -562,
+        1140,
+        1678
+      ],
+      "material": "sc_cable",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y",
+      "segments": 8
+    },
+    {
+      "id": "p1673",
+      "name": "Portón - cable de liberación manual (tramo al motor Ø4)",
+      "size": [
+        72,
+        4,
+        4
+      ],
+      "position": [
+        -562,
+        2086,
+        1678
+      ],
+      "material": "sc_cable",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "x",
+      "segments": 8
+    },
+    {
+      "id": "p1674",
+      "name": "Portón - manilla del cable de liberación (a 1200)",
+      "size": [
+        40,
+        30,
+        30
+      ],
+      "position": [
+        -580,
+        1110,
+        1663
+      ],
+      "material": "sc_cable",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1675",
+      "name": "Portón - guía superior 1 zapata",
+      "size": [
+        400,
+        600,
+        400
+      ],
+      "position": [
+        -4820,
+        -660,
+        1683
+      ],
+      "material": "sc_zapata",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1676",
+      "name": "Portón - guía superior 1 poste (120x120x4)",
+      "size": [
+        120,
+        2130,
+        120
+      ],
+      "position": [
+        -4680,
+        -60,
+        1743
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 4,
+      "cornerRadius": 6
+    },
+    {
+      "id": "p1677",
+      "name": "Portón - rodillo 1a (atrás, Ø60)",
+      "size": [
+        60,
+        120,
+        60
+      ],
+      "position": [
+        -4650,
+        1740,
+        1370
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1678",
+      "name": "Portón - rodillo 1b (frente, Ø60)",
+      "size": [
+        60,
+        120,
+        60
+      ],
+      "position": [
+        -4650,
+        1740,
+        1486
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1679",
+      "name": "Portón - guía superior 1 soporte rodillo a",
+      "size": [
+        40,
+        210,
+        40
+      ],
+      "position": [
+        -4640,
+        1860,
+        1380
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1680",
+      "name": "Portón - guía superior 1 soporte rodillo b (columna)",
+      "size": [
+        40,
+        170,
+        40
+      ],
+      "position": [
+        -4640,
+        1900,
+        1540
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1681",
+      "name": "Portón - guía superior 1 soporte rodillo b (codo)",
+      "size": [
+        40,
+        40,
+        84
+      ],
+      "position": [
+        -4640,
+        1860,
+        1496
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1682",
+      "name": "Portón - guía superior 1 ménsula",
+      "size": [
+        120,
+        100,
+        493
+      ],
+      "position": [
+        -4680,
+        2070,
+        1370
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 4,
+      "cornerRadius": 5
+    },
+    {
+      "id": "p1683",
+      "name": "Portón - guía superior 1 diagonal de refuerzo",
+      "size": [
+        40,
+        246.33307652783935,
+        40
+      ],
+      "position": [
+        -4640,
+        1856.8334617360804,
+        1663
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2,
+      "rotX": -33.69
+    },
+    {
+      "id": "p1684",
+      "name": "Portón - guía superior 2 zapata",
+      "size": [
+        400,
+        600,
+        400
+      ],
+      "position": [
+        -1150,
+        -660,
+        1683
+      ],
+      "material": "sc_zapata",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1685",
+      "name": "Portón - guía superior 2 poste (120x120x4)",
+      "size": [
+        120,
+        2130,
+        120
+      ],
+      "position": [
+        -1010,
+        -60,
+        1743
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 4,
+      "cornerRadius": 6
+    },
+    {
+      "id": "p1686",
+      "name": "Portón - rodillo 2a (atrás, Ø60)",
+      "size": [
+        60,
+        120,
+        60
+      ],
+      "position": [
+        -480,
+        1740,
+        1370
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1687",
+      "name": "Portón - rodillo 2b (frente, Ø60)",
+      "size": [
+        60,
+        120,
+        60
+      ],
+      "position": [
+        -480,
+        1740,
+        1486
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1688",
+      "name": "Portón - guía superior 2 soporte rodillo a",
+      "size": [
+        40,
+        210,
+        40
+      ],
+      "position": [
+        -470,
+        1860,
+        1380
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1689",
+      "name": "Portón - guía superior 2 soporte rodillo b (columna)",
+      "size": [
+        40,
+        170,
+        40
+      ],
+      "position": [
+        -470,
+        1900,
+        1540
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1690",
+      "name": "Portón - guía superior 2 soporte rodillo b (codo)",
+      "size": [
+        40,
+        40,
+        84
+      ],
+      "position": [
+        -470,
+        1860,
+        1496
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1691",
+      "name": "Portón - guía superior 2 ménsula (brazo en z del poste)",
+      "size": [
+        120,
+        100,
+        323
+      ],
+      "position": [
+        -1010,
+        2070,
+        1540
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 4,
+      "cornerRadius": 5
+    },
+    {
+      "id": "p1692",
+      "name": "Portón - guía superior 2 ménsula (brazo en x)",
+      "size": [
+        470,
+        100,
+        40
+      ],
+      "position": [
+        -890,
+        2070,
+        1540
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "x",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1693",
+      "name": "Portón - guía superior 2 ménsula (brazo en z del rodillo)",
+      "size": [
+        60,
+        100,
+        210
+      ],
+      "position": [
+        -480,
+        2070,
+        1370
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1694",
+      "name": "Portón - guía superior 2 diagonal de refuerzo",
+      "size": [
+        40,
+        246.33307652783935,
+        40
+      ],
+      "position": [
+        -970,
+        1856.8334617360804,
+        1663
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2,
+      "rotX": -33.69
+    },
+    {
+      "id": "p1695",
+      "name": "Portón - guía superior 3 zapata",
+      "size": [
+        400,
+        600,
+        400
+      ],
+      "position": [
+        4160,
+        -660,
+        1683
+      ],
+      "material": "sc_zapata",
+      "group": "Portón - sistema de corredera"
+    },
+    {
+      "id": "p1696",
+      "name": "Portón - guía superior 3 poste (120x120x4)",
+      "size": [
+        120,
+        2130,
+        120
+      ],
+      "position": [
+        4220,
+        -60,
+        1743
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 4,
+      "cornerRadius": 6
+    },
+    {
+      "id": "p1697",
+      "name": "Portón - rodillo 3a (atrás, Ø60)",
+      "size": [
+        60,
+        120,
+        60
+      ],
+      "position": [
+        4250,
+        1740,
+        1370
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1698",
+      "name": "Portón - rodillo 3b (frente, Ø60)",
+      "size": [
+        60,
+        120,
+        60
+      ],
+      "position": [
+        4250,
+        1740,
+        1486
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y"
+    },
+    {
+      "id": "p1699",
+      "name": "Portón - guía superior 3 soporte rodillo a",
+      "size": [
+        40,
+        210,
+        40
+      ],
+      "position": [
+        4260,
+        1860,
+        1380
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1700",
+      "name": "Portón - guía superior 3 soporte rodillo b (columna)",
+      "size": [
+        40,
+        170,
+        40
+      ],
+      "position": [
+        4260,
+        1900,
+        1540
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1701",
+      "name": "Portón - guía superior 3 soporte rodillo b (codo)",
+      "size": [
+        40,
+        40,
+        84
+      ],
+      "position": [
+        4260,
+        1860,
+        1496
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 3,
+      "cornerRadius": 2
+    },
+    {
+      "id": "p1702",
+      "name": "Portón - guía superior 3 ménsula",
+      "size": [
+        120,
+        100,
+        493
+      ],
+      "position": [
+        4220,
+        2070,
+        1370
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 4,
+      "cornerRadius": 5
+    },
+    {
+      "id": "p1703",
+      "name": "Portón - guía superior 3 diagonal de refuerzo",
+      "size": [
+        40,
+        246.33307652783935,
+        40
+      ],
+      "position": [
+        4260,
+        1856.8334617360804,
+        1663
+      ],
+      "material": "sc_guia",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "y",
+      "wall": 3,
+      "cornerRadius": 2,
+      "rotX": -33.69
+    },
+    {
+      "id": "p1704",
+      "name": "Portón - cerrojo (pasador Ø25)",
+      "size": [
+        70,
+        25,
+        25
+      ],
+      "position": [
+        4323,
+        928.5,
+        1446
+      ],
+      "material": "sc_recibo",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "x"
+    },
+    {
+      "id": "p1705",
+      "name": "Portón - guía superior 3 brazo del cerrojo",
+      "size": [
+        70,
+        80,
+        272
+      ],
+      "position": [
+        4323,
+        900,
+        1471
+      ],
+      "material": "sc_recibo",
+      "group": "Portón - sistema de corredera",
+      "form": "tube",
+      "axis": "z",
+      "wall": 4,
+      "cornerRadius": 3
+    },
+    {
+      "id": "p1706",
+      "name": "Portón - baliza (Ø80x110)",
+      "size": [
+        80,
+        110,
+        80
+      ],
+      "position": [
+        4240,
+        2170,
+        1763
+      ],
+      "material": "sc_baliza",
+      "group": "Portón - sistema de corredera",
+      "form": "cylinder",
+      "axis": "y"
+    }
+  ]
+}

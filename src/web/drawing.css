@@ -1,0 +1,94 @@
+/* Interfaz del dibujo 2D (drawingUi.ts). Usa las variables de color de index.html. */
+.tabs.dim { margin-left: 2px; }
+.tabs.dim button { font-weight: 600; }
+
+#view.mode2d #canvas, #view.mode2d .toolbar, #view.mode2d .hint, #view.mode2d .overlay, #view.mode2d #finPanel, #view.mode2d #warn { display: none !important; }
+#view.mode2d #agent { right: auto; left: 12px; bottom: 40px; max-width: 360px; }
+.draw2d { display: none; position: absolute; inset: 0; flex-direction: column; background: var(--bg); }
+#view.mode2d .draw2d { display: flex; }
+
+.d2-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px 10px; background: var(--panel); border-bottom: 1px solid var(--line); }
+.d2-top select { width: auto; max-width: 220px; }
+.d2-top .sep { width: 1px; align-self: stretch; background: var(--line); margin: 0 2px; }
+.d2-top .spacer { flex: 1; }
+.d2-top label.inl { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--muted); white-space: nowrap; }
+.d2-top label.inl input[type=number] { width: 66px; padding: 4px 5px; }
+.d2-top label.check input { width: auto; }
+.d2-tools, .d2-io { display: flex; gap: 0; }
+.d2-tools button, .d2-io button { border-radius: 0; margin-left: -1px; }
+.d2-tools button:first-child, .d2-io button:first-child { border-radius: 6px 0 0 6px; margin-left: 0; }
+.d2-tools button:last-child, .d2-io button:last-child { border-radius: 0 6px 6px 0; }
+.d2-tools button:only-child { border-radius: 6px; }
+
+.d2-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 470px; }
+.d2-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #fff; }
+.d2-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; user-select: none; cursor: default; }
+.d2-svg .d2-minor { stroke: #eef0f4; stroke-width: 1; fill: none; }
+.d2-svg .d2-major { stroke: #dde1e8; stroke-width: 1; fill: none; }
+.d2-svg .d2-axis-x { stroke: #ef4444; stroke-width: 1.2; opacity: .7; }
+.d2-svg .d2-axis-y { stroke: #22c55e; stroke-width: 1.2; opacity: .7; }
+.d2-svg .d2-glabel text { font-size: 10px; fill: #9aa3b2; }
+.d2-svg [data-id].hover * { stroke-width: 3px; }
+.d2-svg [data-id].hover text { fill: var(--accent); }
+.d2-svg [data-id].locked { opacity: .55; }
+.d2-svg [data-id].sel text { fill: var(--accent); }
+.d2-svg .d2-snap { fill: none; stroke: #eab308; stroke-width: 2; }
+.d2-svg .d2-snaplbl, .d2-svg .d2-tip { font-size: 11px; fill: #854d0e; paint-order: stroke; stroke: #fff; stroke-width: 3px; }
+.d2-svg .d2-tip { fill: #1f2937; }
+.d2-svg .d2-box { fill: rgba(47, 111, 237, .08); stroke: var(--accent); stroke-width: 1; }
+.d2-svg .d2-box.cross { fill: rgba(22, 163, 74, .08); stroke: #16a34a; stroke-dasharray: 5 3; }
+.d2-flash { animation: d2fade 6s ease-in forwards; pointer-events: none; }
+@keyframes d2fade { 0%, 60% { opacity: 1; } 100% { opacity: 0; } }
+.d2-status { position: absolute; left: 0; right: 0; bottom: 0; display: flex; gap: 16px; padding: 3px 10px; font-size: 12px; color: var(--muted); background: rgba(255, 255, 255, .9); border-top: 1px solid var(--line); pointer-events: none; font-variant-numeric: tabular-nums; }
+.d2-status span:first-child { min-width: 170px; }
+.d2-status b { color: var(--accent); font-weight: 600; }
+.d2-empty { position: absolute; inset: 0; z-index: 2; background: #fff; display: flex; flex-direction: column; gap: 12px; align-items: center; justify-content: center; text-align: center; color: var(--muted); }
+
+.d2-dock { display: flex; flex-direction: column; min-height: 0; background: var(--panel); border-left: 1px solid var(--line); }
+.d2-tabs { display: flex; gap: 2px; padding: 6px 8px 0; border-bottom: 1px solid var(--line); }
+.d2-tabs button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; padding: 6px 12px; }
+.d2-tabs button.active { border-bottom-color: var(--accent); font-weight: 600; color: var(--accent); }
+.d2-pane { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.d2-pane .etools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px; border-bottom: 1px solid var(--line); font-size: 13px; }
+.d2-pane .etools .spacer { flex: 1; }
+.d2-pane .etools select { width: auto; padding: 4px 6px; }
+.d2-pane .dxy { display: flex; align-items: center; gap: 3px; font-size: 12px; color: var(--muted); }
+.d2-pane .dxy input { width: 58px; padding: 4px 5px; }
+.etable-wrap { flex: 1; min-height: 0; overflow: auto; }
+.etable { width: 100%; border: 0; border-radius: 0; font-size: 12px; }
+.etable th { position: sticky; top: 0; z-index: 1; padding: 4px 8px; }
+.etable td { padding: 5px 8px; vertical-align: top; }
+.etable tr.sel td { background: var(--accent-soft); }
+.etable tbody tr { cursor: pointer; }
+.etable tbody tr:hover td { background: #f4f7fd; } .etable tbody tr.sel:hover td { background: var(--accent-soft); }
+.etable .eid { white-space: nowrap; } .etable .eid small { display: block; color: var(--muted); }
+.etable .elayer { width: 104px; } .etable .elayer select { padding: 3px 4px; font-size: 12px; }
+.etable .ecol { display: flex; align-items: center; gap: 4px; margin-top: 3px; }
+.etable input[type=color] { width: 30px; height: 22px; padding: 0; border-radius: 4px; }
+.etable input[type=color].bylayer { opacity: .55; }
+.etable .pf { display: inline-flex; align-items: center; gap: 3px; margin: 1px 6px 1px 0; color: var(--muted); font-size: 11px; }
+.etable .pf input, .etable .pf select { width: 66px; padding: 2px 4px; font-size: 12px; color: var(--text); }
+.etable .pf.wide input { width: 190px; }
+.etable .pf input[type=checkbox] { width: auto; }
+.etable .esum { display: block; color: var(--muted); margin-top: 2px; }
+.etable.ltable td { vertical-align: middle; padding: 4px 6px; }
+.etable.ltable input[type=checkbox], .etable.ltable input[type=radio] { width: auto; }
+.etable.ltable input:not([type]), .etable.ltable select { padding: 3px 5px; font-size: 12px; }
+.etable.ltable tr.cur td { background: var(--accent-soft); }
+button.mini { padding: 0 6px; line-height: 1.5; font-size: 12px; }
+.eadd { padding: 8px; border-top: 1px solid var(--line); background: #fafbfd; }
+.eadd .row { flex-wrap: nowrap; }
+.eadd .row select { width: 80px; flex: none; }
+.eadd .syntax { margin: 4px 0 0; padding: 8px; font-size: 11px; background: #f3f5f8; border: 1px solid var(--line); border-radius: 6px; white-space: pre-wrap; }
+
+.d2-cmd { background: var(--panel); border-top: 1px solid var(--line); padding: 5px 10px; display: flex; flex-direction: column; gap: 4px; }
+.d2-snapbar { display: flex; flex-wrap: wrap; gap: 4px; }
+.d2-snapbar button { padding: 1px 8px; font-size: 12px; }
+.d2-snapbar button.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.d2-cmdrow { display: flex; align-items: center; gap: 10px; }
+.d2-prompt { font-size: 12px; color: var(--accent); white-space: nowrap; }
+.d2-prompt .err { color: var(--danger); margin-left: 6px; white-space: normal; }
+.d2-cmdin { flex: 1; min-width: 160px; padding: 4px 8px; font-family: ui-monospace, Consolas, monospace; }
+
+@media (max-width: 1100px) { .d2-body { grid-template-columns: minmax(0, 1fr) 360px; } }
+@media print { .draw2d { display: none !important; } }

@@ -1,0 +1,58 @@
+{
+  "name": "Demostración de formas sólidas",
+  "kerf": 3,
+  "edgePrice": 0,
+  "hardware": [],
+  "materials": [
+    { "id": "mel18", "name": "Melamina 18 mm", "thickness": 18, "sheetW": 2400, "sheetH": 1200, "color": "#d8b98a", "grain": true, "price": 0 },
+    { "id": "hormigon", "name": "Hormigón", "thickness": 1, "sheetW": 1, "sheetH": 1, "color": "#b9b6ae", "grain": false, "purchased": true },
+    { "id": "acero", "name": "Acero", "thickness": 3, "sheetW": 6000, "sheetH": 50, "color": "#a9b4c2", "grain": false, "purchased": true },
+    { "id": "caucho", "name": "Caucho", "thickness": 1, "sheetW": 1, "sheetH": 1, "color": "#2f3136", "grain": false, "purchased": true }
+  ],
+  "parts": [
+    {
+      "id": "p1", "name": "Pilar cara inclinada", "group": "Pilar",
+      "size": [400, 1800, 400], "position": [0, 0, 0], "material": "hormigon",
+      "form": "prism", "axis": "z",
+      "profile": [[0, 0], [400, 0], [270, 1800], [0, 1800]]
+    },
+    {
+      "id": "p2", "name": "Rueda ranura V 1", "group": "Ruedas",
+      "size": [120, 120, 20], "position": [800, 0, 900], "material": "acero",
+      "form": "revolve", "axis": "z",
+      "profile": [[0, 0], [60, 0], [60, 8], [52, 10], [60, 12], [60, 20], [0, 20]]
+    },
+    {
+      "id": "p3", "name": "Rueda ranura V 2", "group": "Ruedas",
+      "size": [120, 120, 20], "position": [800, 0, 1200], "material": "acero",
+      "form": "revolve", "axis": "z",
+      "profile": [[0, 0], [60, 0], [60, 8], [52, 10], [60, 12], [60, 20], [0, 20]]
+    },
+    {
+      "id": "p4", "name": "Tubo 50x50x3 inclinado", "group": "Perfiles",
+      "size": [50, 1000, 50], "position": [1000, 0, 0], "material": "acero",
+      "form": "tube", "axis": "y", "wall": 3, "cornerRadius": 6, "rotZ": -20
+    },
+    {
+      "id": "p5", "name": "Ángulo L 40x40x3", "group": "Perfiles",
+      "size": [40, 40, 600], "position": [1300, 0, 0], "material": "acero",
+      "form": "prism", "axis": "z",
+      "profile": [[0, 0], [40, 0], [40, 3], [3, 3], [3, 40], [0, 40]]
+    },
+    {
+      "id": "p6", "name": "Pasador Ø12", "group": "Perfiles",
+      "size": [200, 12, 12], "position": [700, 400, 40], "material": "acero",
+      "form": "cylinder", "axis": "x"
+    },
+    {
+      "id": "p7", "name": "Tubo redondo Ø60x4", "group": "Perfiles",
+      "size": [60, 800, 60], "position": [1500, 0, 0], "material": "acero",
+      "form": "cylinder", "axis": "y", "wall": 4, "rotX": 25
+    },
+    {
+      "id": "p8", "name": "Tablón girado 12,5°", "group": "Perfiles",
+      "size": [600, 40, 120], "position": [700, 700, 150], "material": "mel18",
+      "rotZ": 12.5
+    }
+  ]
+}
